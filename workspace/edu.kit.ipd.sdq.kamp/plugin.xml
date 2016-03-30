@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            id="edu.kit.ipd.sdq.kamp.createsubalternativecontribution1"
+            objectClass="org.eclipse.core.resources.IContainer">
+         <menu
+               icon="icons/edit.png"
+               id="edu.kit.ipd.sdq.kamp.menukamp"
+               label="KAMP Analysis">
+         </menu>
+         <action
+               class="edu.kit.ipd.sdq.kamp.ui.CreateEmptyBaseModelAction"
+               icon="icons/filenew.png"
+               id="edu.kit.ipd.sdq.kamp.action1"
+               label="KAMP Leere Architekturversion erstellen"
+               menubarPath="kamp">
+         </action>
+         <action
+               class="edu.kit.ipd.sdq.kamp.ui.CreateSubalternativeAction"
+               icon="icons/editcopy.png"
+               id="edu.kit.ipd.sdq.kamp.action2"
+               label="KAMP Architektur-Subversion erzeugen"
+               menubarPath="kamp">
+         </action>
+         <action
+               class="edu.kit.ipd.sdq.kamp.ui.DeriveWorkplanAction"
+               icon="icons/run.png"
+               id="edu.kit.ipd.sdq.kamp.action3"
+               label="KAMP Arbeitsplan ableiten"
+               menubarPath="kamp">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
